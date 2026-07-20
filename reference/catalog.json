@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "blueprint_version": "0.2.0",
+  "profiles": {
+    "automation-script": {
+      "file": "profiles/automation-script.md",
+      "title": "Profile: Automation Script"
+    },
+    "backend-api": {
+      "file": "profiles/backend-api.md",
+      "title": "Profile: Backend API"
+    },
+    "cli-application": {
+      "file": "profiles/cli-application.md",
+      "title": "Profile: CLI Application"
+    },
+    "distributed-system": {
+      "file": "profiles/distributed-system.md",
+      "title": "Profile: Distributed System"
+    },
+    "frontend-application": {
+      "file": "profiles/frontend-application.md",
+      "title": "Profile: Frontend Application"
+    },
+    "fullstack-application": {
+      "file": "profiles/fullstack-application.md",
+      "title": "Profile: Full-stack Application"
+    },
+    "modular-monolith": {
+      "file": "profiles/modular-monolith.md",
+      "title": "Profile: Modular Monolith"
+    },
+    "saas-application": {
+      "file": "profiles/saas-application.md",
+      "title": "Profile: SaaS Application"
+    },
+    "static-frontend": {
+      "file": "profiles/static-frontend.md",
+      "title": "Profile: Static Frontend"
+    }
+  },
+  "topics": {
+    "adoption": {
+      "file": "docs/00-how-to-use-this-blueprint.md",
+      "aliases": ["adopt", "bootstrap", "onboarding", "setup"],
+      "compact_sections": [
+        "Applicability language",
+        "Initial flow",
+        "How AI agents should consume the blueprint",
+        "Adoption completion criteria"
+      ]
+    },
+    "classification": {
+      "file": "docs/01-project-classification.md",
+      "aliases": ["assess", "assessment", "classify", "risk-profile"],
+      "compact_sections": [
+        "How to assess a project",
+        "Risk markers that must not be averaged away",
+        "Turn findings into recommendations",
+        "Reassessment triggers"
+      ]
+    },
+    "engineering": {
+      "file": "docs/02-engineering-principles.md",
+      "aliases": ["principles", "simplicity", "abstraction", "boundaries"],
+      "compact_sections": [
+        "Context and applicability",
+        "Simplicity before generality",
+        "Duplication and abstraction",
+        "A practical review sequence"
+      ]
+    },
+    "architecture": {
+      "file": "docs/03-architecture-selection.md",
+      "aliases": ["architecture-selection", "architecture-style", "patterns", "topology"],
+      "compact_sections": [
+        "How to use the matrix",
+        "Combining options deliberately",
+        "Decision record checklist"
+      ]
+    },
+    "structure": {
+      "file": "docs/04-project-structure.md",
+      "aliases": ["project-structure", "folders", "layout", "repository-structure"],
+      "compact_sections": [
+        "Selection criteria",
+        "Placement rules that prevent entropy",
+        "Structure review checklist"
+      ]
+    },
+    "coding": {
+      "file": "docs/05-coding-conventions.md",
+      "aliases": ["coding-conventions", "code-quality", "conventions", "standards"],
+      "compact_sections": [
+        "Applicability",
+        "Precedence and sources of truth",
+        "Automated baseline",
+        "Compatibility and change discipline",
+        "Review checklist"
+      ]
+    },
+    "domain": {
+      "file": "docs/06-domain-modeling.md",
+      "aliases": ["domain-modeling", "ddd", "business-rules", "invariants"],
+      "compact_sections": [
+        "Applicability",
+        "Does the domain justify a richer model?",
+        "Permissions are part of behavior",
+        "Testing the model",
+        "Model review checklist"
+      ]
+    },
+    "backend": {
+      "file": "docs/backend-architecture.md",
+      "aliases": ["backend-architecture", "server", "service-layer", "repositories"],
+      "compact_sections": [
+        "Default decision",
+        "Responsibility flow",
+        "Persistence choices",
+        "Evolution signals",
+        "Review questions"
+      ]
+    },
+    "api": {
+      "file": "docs/07-api-design.md",
+      "aliases": ["api-design", "contract", "rest", "versioning"],
+      "compact_sections": [
+        "Contract before implementation",
+        "Evolution and backward compatibility",
+        "Idempotency and concurrency",
+        "Authentication, authorization, and rate limiting",
+        "Review checklist"
+      ]
+    },
+    "data": {
+      "file": "docs/08-data-and-persistence.md",
+      "aliases": ["persistence", "database", "migration", "transactions"],
+      "compact_sections": [
+        "Choosing persistence",
+        "Transactions and concurrency",
+        "Migrations",
+        "Retention, privacy, and encryption",
+        "Review checklist"
+      ]
+    },
+    "frontend": {
+      "file": "docs/09-frontend-architecture.md",
+      "aliases": ["frontend-architecture", "ui", "client", "state-management"],
+      "compact_sections": [
+        "Start with user flows and ownership",
+        "Components and composition",
+        "State ownership",
+        "Loading, empty, error, and partial states",
+        "Accessibility and responsiveness",
+        "Review checklist"
+      ]
+    },
+    "design-system": {
+      "file": "docs/10-design-system.md",
+      "aliases": ["design", "tokens", "component-library", "css"],
+      "compact_sections": [
+        "Select the minimum viable level",
+        "Design tokens",
+        "Component library",
+        "Quality and governance",
+        "Review checklist"
+      ]
+    },
+    "security": {
+      "file": "docs/11-security.md",
+      "aliases": ["auth", "authorization", "privacy", "threats"],
+      "compact_sections": [
+        "Start with threats and data",
+        "Authorization in the backend",
+        "Secrets and key management",
+        "Input, output, and common vulnerability classes",
+        "Dependencies and software supply chain",
+        "Security review checklist"
+      ]
+    },
+    "testing": {
+      "file": "docs/12-testing.md",
+      "aliases": ["tests", "quality-gates", "verification", "test-strategy"],
+      "compact_sections": [
+        "Select tests from risks",
+        "Mandatory high-risk rules",
+        "Test behavior, not implementation",
+        "Strategy checklist"
+      ]
+    },
+    "observability": {
+      "file": "docs/13-observability.md",
+      "aliases": ["monitoring", "logging", "metrics", "tracing"],
+      "compact_sections": [
+        "Begin with operational questions",
+        "Structured logs",
+        "Technical log versus audit trail",
+        "Alerts",
+        "Review checklist"
+      ]
+    },
+    "delivery": {
+      "file": "docs/14-devops-and-delivery.md",
+      "aliases": ["devops", "deployment", "ci-cd", "release-engineering"],
+      "compact_sections": [
+        "Continuous integration",
+        "Database migrations in delivery",
+        "Rollback and recovery",
+        "Secrets in pipelines and runtime",
+        "Delivery checklist"
+      ]
+    },
+    "documentation": {
+      "file": "docs/15-documentation.md",
+      "aliases": ["docs", "runbook", "diagrams", "documentation-drift"],
+      "compact_sections": [
+        "Documentation map",
+        "What belongs where",
+        "Keep documentation close to change",
+        "Architecture Decision Records",
+        "Detect and correct drift",
+        "Review checklist"
+      ]
+    },
+    "ai": {
+      "file": "docs/16-ai-assisted-development.md",
+      "aliases": ["ai-assisted-development", "agent", "prompt", "context"],
+      "compact_sections": [
+        "Build a trustworthy context chain",
+        "Prepare an actionable task",
+        "Evidence-first execution",
+        "Verification proportional to risk",
+        "Reviewing AI-authored changes",
+        "Adoption checklist"
+      ]
+    },
+    "architecture-review": {
+      "file": "docs/17-architecture-review.md",
+      "aliases": ["architecture-health", "fitness", "reassessment", "review"],
+      "compact_sections": [
+        "Review triggers",
+        "Inputs and evidence",
+        "Review process",
+        "Findings and decisions",
+        "Review output",
+        "Completion checklist"
+      ]
+    },
+    "adr": {
+      "file": "docs/adr/README.md",
+      "aliases": ["decision-record", "architecture-decision-record", "decision-log", "supersession"],
+      "compact_sections": [
+        "When to create an ADR",
+        "When not to create one",
+        "Status lifecycle",
+        "Workflow",
+        "Decision index",
+        "Maintenance checklist"
+      ]
+    }
+  },
+  "task_routes": {
+    "project-start": {
+      "primary_topics": ["adoption", "classification", "architecture"],
+      "related_topics": ["structure", "engineering", "security", "testing", "delivery", "documentation", "ai"],
+      "checklists": ["checklists/project-start.md"],
+      "templates": [
+        "templates/project-context.template.md",
+        "templates/architecture-assessment.template.md",
+        "templates/technology-stack.template.md",
+        "templates/testing-strategy.template.md",
+        "templates/definition-of-done.template.md",
+        "templates/architecture-overview.template.md"
+      ]
+    },
+    "feature": {
+      "primary_topics": ["engineering", "coding", "testing"],
+      "related_topics": ["domain", "backend", "api", "data", "frontend", "security", "observability", "delivery", "documentation"],
+      "checklists": ["checklists/feature-start.md", "checklists/code-review.md"],
+      "templates": ["templates/feature-specification.template.md", "templates/definition-of-done.template.md"]
+    },
+    "frontend-change": {
+      "primary_topics": ["frontend", "testing"],
+      "related_topics": ["design-system", "api", "security"],
+      "checklists": ["checklists/feature-start.md", "checklists/code-review.md"],
+      "templates": ["templates/feature-specification.template.md"]
+    },
+    "backend-change": {
+      "primary_topics": ["backend", "testing"],
+      "related_topics": ["domain", "api", "data", "security", "observability"],
+      "checklists": ["checklists/feature-start.md", "checklists/code-review.md"],
+      "templates": ["templates/feature-specification.template.md"]
+    },
+    "api-change": {
+      "primary_topics": ["api", "testing"],
+      "related_topics": ["backend", "security", "documentation"],
+      "checklists": ["checklists/feature-start.md", "checklists/code-review.md"],
+      "templates": ["templates/api-contract.template.md"]
+    },
+    "data-change": {
+      "primary_topics": ["data", "testing"],
+      "related_topics": ["backend", "security", "delivery", "observability"],
+      "checklists": ["checklists/feature-start.md", "checklists/code-review.md"],
+      "templates": ["templates/feature-specification.template.md"]
+    },
+    "security-review": {
+      "primary_topics": ["security"],
+      "related_topics": ["api", "data", "frontend", "backend", "delivery", "observability", "testing"],
+      "checklists": ["checklists/code-review.md"],
+      "templates": ["templates/security-checklist.template.md"]
+    },
+    "architecture-decision": {
+      "primary_topics": ["classification", "architecture", "adr"],
+      "related_topics": ["engineering", "structure", "architecture-review"],
+      "checklists": ["checklists/architecture-health.md"],
+      "templates": ["templates/adr.template.md", "templates/architecture-overview.template.md", "adoption/decision-index.md"]
+    },
+    "release": {
+      "primary_topics": ["delivery", "testing"],
+      "related_topics": ["security", "observability", "documentation", "data"],
+      "checklists": ["checklists/release-readiness.md"],
+      "templates": ["templates/definition-of-done.template.md"]
+    },
+    "incident": {
+      "primary_topics": ["observability", "delivery"],
+      "related_topics": ["security", "data", "backend", "documentation"],
+      "checklists": [],
+      "templates": []
+    },
+    "ai-task": {
+      "primary_topics": ["ai"],
+      "related_topics": ["engineering", "coding", "testing", "security", "documentation"],
+      "checklists": ["checklists/feature-start.md", "checklists/code-review.md"],
+      "templates": ["templates/feature-specification.template.md"]
+    }
+  }
+}

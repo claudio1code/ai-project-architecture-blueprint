@@ -1,0 +1,44 @@
+{
+  "name": "ai-project-architecture-blueprint",
+  "version": "0.2.0",
+  "description": "Context-aware architecture guidance and a token-efficient adoption CLI for AI-assisted projects.",
+  "type": "module",
+  "bin": {
+    "architecture-blueprint": "bin/architecture-blueprint.mjs"
+  },
+  "files": [
+    "adoption/",
+    "bin/",
+    "checklists/",
+    "docs/",
+    "examples/",
+    "lib/",
+    "profiles/",
+    "reference/",
+    "templates/",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check:cli": "node bin/architecture-blueprint.mjs --help"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudio1code/ai-project-architecture-blueprint.git"
+  },
+  "keywords": [
+    "architecture",
+    "blueprint",
+    "ai-agents",
+    "software-design",
+    "adr"
+  ],
+  "license": "MIT"
+}
